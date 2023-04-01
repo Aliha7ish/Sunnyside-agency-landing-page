@@ -1,0 +1,124 @@
+/*
+---- 01- Typography System
+
+-- Font Sizes (px)
+10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98
+
+-- font weight 
+Default: 
+medium: 
+bold: 
+
+--Line height
+Default: 
+small: 1.1
+medium: 1.4
+big: 1.6
+
+--letter-spacing
+small: 1px 
+large: 6.5px
+medium: 4.5px
+
+
+
+---- 02 COLORS
+
+- Primary: 
+- Tints: #8ad7fe
+#fffcfc
+#fdea80
+#ffc9c2
+#3b675d
+
+- Shades: 
+- Accents: 
+- Greys: 
+
+
+
+---- 03 SHADOWS 
+
+---- 04 BORDER-RADIUS
+Default: 
+medium: 5px
+large: 50px
+
+
+---- 05 WHITESPACE
+padding: 
+sml-whitespace: 1.2rem 2rem
+large-whitespace:
+ 7.2
+ 9.2rem
+medium whitespace:
+ 3.2rem
+ 1.4rem
+ 2.4rem
+
+
+-Spacing system(px)
+2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
+*/
+html {
+    font-size: 62.5%;
+    overflow-x: hidden;
+  }
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  body {
+    line-height: 1;
+    font-family: "Fraunces", serif;
+    color: #23303e;
+    background-color: #fffcfc;
+  }
+  .container{
+    max-width: 120rem;
+    margin: 0 auto;
+    padding: 0 1.2rem;
+  }
+  .grid{
+    display: grid;
+  }
+  .grid--3-cols{
+    column-gap: 4.4rem;
+    grid-template-columns: repeat(3, 1fr);
+  }
+  a:link,
+  a:visited{
+    text-decoration: none;
+    display: inline-block;
+    width: fit-content;
+  }
+  .nav-link:link,
+  .nav-link:visited{
+    color: #fff;
+    font-size: 1.6rem;
+    font-family: 'Barlow', sans-serif;
+    font-weight: 400;
+  }
+  .nav-link:hover,
+  .nav-link:active{
+    color: #fff;
+  }
+  ul{
+    list-style: none;
+  }
+
+  /* Mobile nav menu */
+  .open-icon{
+    border: none;
+  }
+  .mobile-nav-btn{
+    border: none;
+    background: none;
+    cursor: pointer;
+    display: none;
+  }
+
+  .nav-open path[d="M24 16v2H0v-2h24zm0-8v2H0V8h24zm0-8v2H0V0h24z"]{
+    fill: #5a636c;
+  }
