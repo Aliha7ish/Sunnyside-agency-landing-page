@@ -57,6 +57,21 @@
 }
 /* BELOW 688 PX */
 @media (max-width: 43.5em) {
+  .main-heading{
+    font-size: 2.4rem;
+  }
+  .hero-header{
+    padding-top: 4rem;
+  }
+  .hero-section{
+    height: 65vh;
+  }
+  .hero-header{
+    gap: 3rem;
+  }
+  .main-heading{
+    font-size: 3.2rem;
+  }
   html {
     font-size: 60%;
   }
@@ -82,8 +97,6 @@
   }
   .main-heading {
     font-size: 4rem;
-    padding-left: 2rem;
-    padding-right: 2rem;
   }
   .feature-text-container {
     gap: 1.6rem;
@@ -99,7 +112,12 @@
 }
 /* BELOW 590 PX */
 @media (max-width: 36.875em) {
-    
+  .main-heading {
+    font-size: 3.2rem;
+  }
+  .hero-header{
+    top: 40%;
+  }
   .mobile-nav-btn {
     display: block;
     z-index: 999;
@@ -160,9 +178,6 @@
 
 /* BELOW 512 PX */
 @media (max-width: 32em){
-    .main-heading{
-        padding-top: 6.2rem;
-    }
     .features-section {
         grid-template-columns: none;
         grid-template-rows: repeat(6, 1fr);
@@ -223,14 +238,18 @@
     width: 100%;
 }
 }
-
+/* BELOW 380 PX */
+@media (max-width: 23.75em){
+  .main-heading{
+      font-size: 2.8rem;
+  }
+  .hero-header{
+    gap: 2.8rem;
+  }
+}
 /* BELOW 350 PX */
 @media (max-width: 21.875em){
-    .main-heading{
-        font-size: 3rem;
-        padding: 0 1rem;
-        padding-top: 6.2rem;
-    }
+  
     .secondary-heading{
         font-size: 2.4rem;
       }
@@ -270,7 +289,10 @@
 /* BELOW 290 PX */
 @media (max-width: 18.125em){
     .main-heading{
-        font-size: 3.6rem;
-        letter-spacing: 4.5px;
+        font-size: 2.2rem;
+        letter-spacing: 3.5px;
+    }
+    .hero-header{
+      gap: 2rem;
     }
 }
